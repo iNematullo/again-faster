@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Work+Sans&display=swap');
+@font-face {
+    font-family: Arca Majora 3;
+    src: url(fonts/ArcaMajora3-Bold.otf);
+  }
+
+:root {
+    --lgray: #F1F1F1;
+    --gold: #C2A578;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #161616;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.main{
+	flex: 1 1 auto;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+}
+.img {
+    max-width: 100%;
+}
+.title{
+    font-size: 52px;
+    line-height: 54px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.text{
+    font-size: 20px;
+    line-height: 28px;
+}
+/* ============================================== */
+
+.header {
+    height: 92px;
+    border-bottom: 1px solid #16161610;
+}
+.header__top {
+    background-color: #FBFBFB;
+    height: 40px;
+    vertical-align: middle;
+}
+.header__top p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 168%;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.header__bottom {
+    height: 52px;
+    display: flex;
+    align-items: center;
+}  
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__left {
+    margin-right: 10px;
+}
+.header__logo {
+    margin-right: 22px;
+}
+.header__link {
+    font-size: 15px;
+    line-height: 15px;  
+    color: #5C5C5C;
+    transition: all 0.3s ease-in-out;
+}
+.header__link:hover{
+    color: #161616;
+}
+.header__center{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header__right {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.header__icons {
+    display: flex;
+}
+.header__icon {
+    padding: 9px;
+}
+.hamburger {
+    display: none;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.menu__link {
+    transition: all 0.3s ease-in-out;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.menu__link:hover{
+    color: #161616;
+}
+.menu__link-btn{
+    margin-left: 22px;
+}
+/* =============================================== */
+
+.home {
+    background: #000000;
+}
+
+.line {
+    --w:1px; 
+    --n:3;   
+    background: linear-gradient(90deg, #000000 calc(100% - var(--w)), rgba(194, 165, 120, 0.2) 0);
+    background-size: calc((100% - var(--n)*var(--w))/(var(--n) + 1) + var(--w)) 100%;
+}
+
+.home__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.home__item {
+    max-width: 600px;
+    padding-top: 55px;
+    margin-left: 40px;
+}
+.home__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 126px;
+}
+.home__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 167.5%;
+    color: #FFFFFF;
+    padding-bottom: 80px;
+}
+.home__image {
+    margin-right: -40px;
+    padding: 47px 0;
+}
+.home__img {
+    width: 100%;
+    height: auto;
+    /* min-width: 680px; */
+}
+.home__content {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+.home__content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.home__content2-text {
+    max-width: 517px;
+}
+.home__content-texts {
+    max-width: 445px;
+    margin-left: 122px;
+}
+.home__content-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 167.5%;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+.home__content-list {
+    font-family: 'Arca Majora 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 167.5%;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+.home__content-list span {
+    color: #C2A578;
+}
+.home__content-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 143%;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 40px;
+    min-width: 517px;
+}
+.home__btn--white {
+    margin-left: 20px;
+}
+.home__btn--white {
+    background-color: transparent;
+    color: #161616;
+}
+.home__btn--white:hover {
+    background-color: #161616;
+    color: #fff;
+}
+/* ====================================== */
+
+.products {
+    padding: 80px 0;
+}
+
+.products__inner {
+    overflow: hidden;
+}
+
+.products__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.swiper-container {
+    cursor: pointer;
+}
+.swiper-slide {
+    margin: 0 8px;
+    max-width: 328px;
+}
+
+.product__shipping {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 167.5%;
+    text-align: center;
+    color: #000000;
+    background: #FBFBFB;
+    padding: 4px 7px;
+    margin-top: 8px;
+    position: absolute;
+    margin-left: 8px;
+}
+
+.product__name {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 168%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 8px;
+}
+
+.product__rating {
+    color: #C2A578;
+    padding-top: 8px;
+}
+
+.product__price {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 168%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 8px;
+}
+
+
+/* =========================================== */
+
+
+.footer {
+    background-color: #F1F1F1;
+    background-image: url(/img/af.png);
+    background-repeat: no-repeat;
+    background-position: 0 128px;
+}
+
+.footer__top {
+    display: flex;
+    padding: 80px 0 70px;
+    justify-content: center;
+}
+
+.footer__top-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1130px;
+    width: 100%;
+}
+.footer__nletter {
+    flex-basis: 50%;
+}
+
+.footer__title {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.email-input {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 141.8%;
+    color: #000000;
+    background: none;
+}
+.footer__email {
+    background: none;
+    opacity: 0.5;
+    width: 460px;
+    height: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.arrow {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 460px;
+    margin-top: -26px;
+}
+
+.footer__logo{
+    position: absolute;
+    padding-top: 128px;
+    margin-left: -40px;
+}
+.social__list {
+    display: flex;
+    padding-top: 30px;
+}
+
+.social__item {
+    padding-right: 20px;
+}
+.footer__menu__item {
+    padding-bottom: 12px;
+}
+
+.footer__menu__link-footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 167.5%;
+    color: #7E7E7E;
+}
+
+.footer__contact {
+    flex-basis: 25%;
+
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+}
+.copy {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 167.5%;
+    color: #C4C4C4;
+    padding-bottom: 24px;
+}
+

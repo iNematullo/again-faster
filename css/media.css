@@ -1,0 +1,153 @@
+@media (max-width: 768px){
+
+
+    .home__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    .menu__link,
+    .header__link{
+        display: none;
+    }
+
+
+    .home{
+        padding: 50px 0;
+    }
+    
+    .footer{
+        background-position: center bottom -50px;
+    }
+    .footer__top{
+        padding: 40px 0;
+    }
+    .footer__top-container {
+        flex-direction: column;
+        gap: 26px;
+    }
+    .footer__bottom {
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 650px){
+
+
+/* 
+@media (max-width: 550px){ */
+
+
+    .container{
+        margin: 0 auto;
+        padding: 0 16px;
+        width: 100%;
+    }
+    .header{
+        height: 80px;
+    }
+
+
+    .header__top {
+        height: 38px;
+    }
+    .header__inner {
+        justify-content: space-between;
+    }
+    .header__bottom {
+        height: 42px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .hidden {
+        display: none;
+    }
+    .clear {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .home{
+        padding: 45px 0;
+    }
+
+    .home__title {
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 19px;
+    }
+
+    .home__text { 
+        font-size: 12px;
+        padding-bottom: 40px;
+
+    }
+    .line {
+        background: #000;
+    }
+    .home__image {
+        margin-right: -16px;
+        padding: 0 0 40px 0;
+    }
+
+    .home__content, .home__content2 {
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: normal;
+    }
+    .home__content-texts {
+        margin: 0;
+        padding-top: 24px;
+        max-width: 100%;
+    }
+    .home__content-list, .home__content-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .home__content-list span {
+        color: #C2A578;
+        font-family: 'Arca Majora 3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+    }    
+    .home__content-title { 
+        font-size: 28px;
+        line-height: 38px;
+        padding: 0 0 16px 0;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .products {
+        padding: 40px 0;
+    }
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .footer{
+        background-position: center bottom -50px;
+    }
+    .footer__top{
+        padding: 40px 0;
+    }
+    .footer__top-container {
+        flex-direction: column;
+        gap: 26px;
+    }
+    .footer__bottom {
+        align-items: center;
+    }
+
+}
